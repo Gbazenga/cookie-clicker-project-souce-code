@@ -1,0 +1,53 @@
+.spacing{
+    margin:0 !important;
+    padding: 0 !important;
+}
+
+.blockSpecial{
+    width:50px !important;
+    height: 50px;
+    background: #000;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    text-align: center;
+}
+
+.blockSpecial p{
+    color:#fff;
+    font-size: 13px;
+    margin-top: 5px;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.hiddenTextGain{
+    position: absolute;
+    color:#000;
+    font-size: 18px;
+    opacity: 0;
+    width:auto !important;
+    background:#fff;
+    z-index: 100;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.7);}
+    50% { opacity: 1; transform: scale(1.2);}
+    95% { opacity: 0; transform: scale(0.7);}
+    100% { opacity: 0; transform: scale(0.7);}
+  }
+
+@keyframes textBob {
+    0% { opacity: 0;}
+    50% { opacity: 1;transform:translateY(-20px)}
+    100% { opacity: 0;transform:translateY(0px)}
+}
+
+.blockTransition{
+    animation: fadeIn 30s;
+}
+
+.textTransition{
+    animation: textBob 3s;
+}
